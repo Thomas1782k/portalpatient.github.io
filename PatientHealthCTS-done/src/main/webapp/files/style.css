@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Ubuntu:wght@700&display=swap');
+body
+{
+	background-image: url("/files/bimage.png");
+	 /* background: linear-gradient(to left top,
+    rgba(52, 179, 241,0.8),
+    rgba(255, 240, 250,0.5)
+    
+    ); 
+    min-height: 100vh; */
+     background-repeat: no-repeat;
+    background-size: 1600px 800px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
+    
+}
+
+h1,h2, h3, h4
+{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.fholder
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(to left top,
+    #3AB0FF,
+    #FFFFFF
+    
+    ); 
+    min-height: 100vh; 
+	background-size: 100rem 850px;
+	background-repeat: no-repeat;	 
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
+    
+}
+
+.fcontent
+{
+    width: 300px;
+    height: 100px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    border-radius: 50px;
+    
+}
+
+.fcontent .ele
+{
+    width: 100%;
+    height: 100%; 
+    margin-top: 20px;   
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.ele h3
+{
+	color:black;
+	
+}
+
+.fcontent .ele img
+{
+width: 50%;
+}
+
+.fcontent .ele:nth-child(1)
+{
+    margin-top: 0;
+    animation: anim 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1s  both;
+    
+}
+.fcontent .ele:nth-child(2)
+{
+    
+    animation: anim 1.5s cubic-bezier(0.19, 1, 0.22, 1) 2.5s   both;
+}
+.fcontent .ele:nth-child(3)
+{
+    
+     margin-top:0;
+}
+
+
+
+
+@keyframes anim
+{
+    to
+    {
+        margin-top: -100px;
+    }
+}
+
+@keyframes anim2{
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+.n-all
+{
+	background-color: #051367;
+	color: #051367;
+	font-family: 'Ubuntu', sans-serif;
+	border-radius: 10px;
+}
+.about
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:70%;
+	height: 40%;
+	background: linear-gradient(to right bottom,
+    rgba(255, 140, 50,0.7),
+    rgba(255, 240, 250,0.9)
+    );
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	border-radius: 20px;
+	
+}
+.info
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin: 0 auto;
+	width: 60%;
+	color:#000000;
+	background-color: #DFF6FF;
+	padding:10px;
+	border-radius: 20px;
+}
+.inside
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.inside-1
+{
+	width: 50%;
+}
+
+/**********doctor*********/
+.doc-home
+{
+	padding:100px 0;
+}
+.doc-opt
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.sub
+{
+  background-color: rgba(36, 47, 155,0.7);
+  border: none;
+  border-radius:5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+.sub:hover {
+	background-color: rgba(255, 255, 255,0.9);
+	color: black;
+}
+.psub
+{
+  background-color: #34B3F1;
+  border: none;
+  border-radius:5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.psub:hover {
+	background-color: rgba(255, 255, 255,0.9);
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.dsub
+{
+  background-color: #34B3F1;
+  border: none;
+  border-radius:5px;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.dsub:hover {
+	background-color: rgba(255, 255, 255,0.9);
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+.png-doc
+{
+	position: absolute;
+	top:280px;
+	right:2%;
+}
+
+.png-hseth
+{
+	position: absolute;
+	top:900px;
+	left:20px;
+}
+
+.png-seth
+{
+	position: absolute;
+	top:400px;
+	right:40px;
+	
+  background:transparent;
+
+}
+
+.png-pbed
+{
+	position: absolute;
+	top: 400px;
+	left: 20px;
+}
+.png-pho
+{
+	position: absolute;
+	top: 700px;
+	right: 20px;
+}
+
+.png-docn
+{
+	position: absolute;
+	top:100px;
+	left:8%;
+}
+
+.png-pat
+{
+	position: absolute;
+	top:250px;
+	right:5%;
+}
+
+/*********appointment************/
+
+.appo
+{
+	margin:20px;
+	border-style: solid;
+    border-color: #0E185F;
+}
+
+/************patient*******/
+
+.docup
+{
+	width: 200px;
+	
+}
+.pat-det
+{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin-top:50px;	
+	color: black;
+	
+}
+.pat-det h3
+{
+	color:#0E185F;
+}
+
+.png-pathealth
+{
+	position: absolute;
+	top:250px;
+	right:4%;
+}
+
+.pre-hel
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/**********Admin*********/
+
+.png-adm
+{
+	position: absolute;
+	top:250px;
+	right:1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
